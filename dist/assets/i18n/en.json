@@ -1,0 +1,79 @@
+{
+  "primeng": {
+    "dayNames": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "dayNamesMin": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    "monthNames": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "monthNamesShort": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "dateFormat": "dd/mm/yy",
+    "upload": "Upload",
+    "cancel": "Delete",
+    "choose": "Choose"
+  },
+  "days": {
+    "1": "Mon",
+    "2": "Tue",
+    "3": "Wed",
+    "4": "Thu",
+    "5": "Fri",
+    "6": "Sat",
+    "0": "Sun"
+  },
+  "login": {
+    "title": "Test Form",
+    "submit": "Submit",
+    "valuta": "Wallet Currency",
+    "select_valuta": "Select Currency Type",
+    "casuale": "Random Type",
+    "select_casuale": "Select Random Type",
+    "data": "Data Operation",
+    "strumento": "Instrument",
+    "quantita": "Quantity",
+    "prezzo": "Price",
+    "importo": "Amount",
+    "lang": "Language",
+    "select_lang": "select Language"
+  },
+  "no": "No",
+  "yes": "Yes",
+  "close": "Close",
+  "continue": "Continue",
+  "confirm": "Confirm",
+  "edit": "Edit",
+  "proceed": "Proceed",
+  "warning": "Attention!"
+}
