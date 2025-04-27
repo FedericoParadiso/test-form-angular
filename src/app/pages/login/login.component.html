@@ -1,0 +1,35 @@
+<div class="external" id="main">
+  <div class="section" id="login">
+    <div class="content-body">
+      <div class="content">
+        <div class="title">
+          <h1>{{ "login.title" | translate }}</h1>
+        </div>
+        <form [formGroup]="form" class="form">
+          <!-- <div class="fieldset">
+            <p-dropdown [options]="ships" [style]="{'width': '100%'}" formControlName="shipId"
+              optionLabel="name" optionValue="id" placeholder="{{ 'login.select_ship' | translate }}" />
+          </div> -->
+          <div class="fieldset">
+            <p-floatLabel>
+              <input formControlName="username" id="username" pInputText type="text" />
+              <label for="username">{{ "login.placeholder_card" | translate }}</label>
+            </p-floatLabel>
+          </div>
+          <div class="fieldset">
+            <p-floatLabel>
+              <!-- <input id="username" type="text" pInputText formControlName="password"
+                              pattern="^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$"
+                              (input)="onDateInput($event)" /> -->
+              <p-inputMask formControlName="password" mask="99/99/9999" />
+              <label for="password">{{ "login.placeholder_pass" | translate }}</label>
+            </p-floatLabel>
+          </div>
+        </form>
+      </div>
+      <div class="buttons">
+        <p-button pRipple [disabled]="!form.valid" [label]=" 'login.title' | translate" [style]="{'width': '100%'}" />
+      </div>
+    </div>
+  </div>
+</div>

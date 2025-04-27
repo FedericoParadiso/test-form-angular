@@ -1,0 +1,76 @@
+{
+  "primeng": {
+    "dayNames": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "dayNamesMin": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    "monthNames": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "monthNamesShort": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "dateFormat": "dd/mm/yy",
+    "upload": "Upload",
+    "cancel": "Delete",
+    "choose": "Choose"
+  },
+  "days": {
+    "1": "Mon",
+    "2": "Tue",
+    "3": "Wed",
+    "4": "Thu",
+    "5": "Fri",
+    "6": "Sat",
+    "0": "Sun"
+  },
+  "login": {
+    "title": "Login",
+    "header": "Login",
+    "login": "Login",
+    "placeholder_card": "Booking number or Costa Card number",
+    "placeholder_pass": "Date of birth (dd/mm/yyyy)",
+    "card_invalid": "Costa Card number without the first 0",
+    "date_invalid": "Invalid date",
+    "data_invalid": "Warning: incorrect login details",
+    "enter": "Enter",
+    "select_ship": "Select Ship"
+  },
+  "no": "No",
+  "yes": "Yes",
+  "close": "Close",
+  "continue": "Continue",
+  "confirm": "Confirm",
+  "edit": "Edit",
+  "proceed": "Proceed",
+  "warning": "Attention!"
+}
