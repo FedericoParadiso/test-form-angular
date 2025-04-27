@@ -84,7 +84,16 @@ ul {
   .fieldset {
     margin-bottom: 1.5rem;
 
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
     input {
+      width: 100%;
+    }
+
+    p-inputnumber, .p-inputnumber {
       width: 100%;
     }
   }
@@ -197,6 +206,7 @@ ul {
         box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.05);
         position: sticky;
         bottom: 0;
+        background: #fff;
       }
     }
   }

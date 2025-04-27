@@ -16,14 +16,13 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LoginComponent } from './pages/login/login.component';
 
 // primeNG
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputMaskModule } from 'primeng/inputmask';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { DropdownModule } from 'primeng/dropdown';
+import { CalendarModule } from 'primeng/calendar';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { DropdownModule } from 'primeng/dropdown';
     FormsModule,
     ReactiveFormsModule.withConfig({ warnOnNgModelWithFormControl: 'never' }),
     HttpClientModule,
-    ToastModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -47,14 +45,14 @@ import { DropdownModule } from 'primeng/dropdown';
         deps: [HttpClient],
       },
     }),
-    FloatLabelModule,
     InputTextModule,
     InputMaskModule,
     ButtonModule,
     RippleModule,
+    CalendarModule,
+    InputNumberModule
   ],
   providers: [
-    MessageService,
     JwtHelperService,
     { provide: JWT_OPTIONS, useValue: JWT_OPTIONS }
   ],

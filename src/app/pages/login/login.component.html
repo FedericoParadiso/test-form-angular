@@ -5,30 +5,56 @@
         <div class="title">
           <h1>{{ "login.title" | translate }}</h1>
         </div>
+        <div class="fieldset" style="margin-bottom: 1.5rem;">
+          <label for="valuta">{{ "login.lang" | translate }}</label>
+          <p-dropdown [options]="langs" [style]="{'width': '100%'}" optionLabel="name" optionValue="value"
+            placeholder="{{ 'login.select_lang' | translate }}" [(ngModel)]="selectedLang"
+            (ngModelChange)="OnChange($event)" />
+        </div>
         <form [formGroup]="form" class="form">
-          <!-- <div class="fieldset">
-            <p-dropdown [options]="ships" [style]="{'width': '100%'}" formControlName="shipId"
-              optionLabel="name" optionValue="id" placeholder="{{ 'login.select_ship' | translate }}" />
-          </div> -->
           <div class="fieldset">
-            <p-floatLabel>
-              <input formControlName="username" id="username" pInputText type="text" />
-              <label for="username">{{ "login.placeholder_card" | translate }}</label>
-            </p-floatLabel>
+            <label for="valuta">{{ "login.valuta" | translate }}</label>
+            <p-dropdown [options]="valute" [style]="{'width': '100%'}" formControlName="valuta" optionLabel="name"
+              optionValue="id" placeholder="{{ 'login.select_valuta' | translate }}" />
           </div>
           <div class="fieldset">
-            <p-floatLabel>
-              <!-- <input id="username" type="text" pInputText formControlName="password"
-                              pattern="^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$"
-                              (input)="onDateInput($event)" /> -->
-              <p-inputMask formControlName="password" mask="99/99/9999" />
-              <label for="password">{{ "login.placeholder_pass" | translate }}</label>
-            </p-floatLabel>
+            <label for="casuale">{{ "login.casuale" | translate }}</label>
+            <p-dropdown [options]="casuali" [style]="{'width': '100%'}" formControlName="casuale" optionLabel="name"
+              optionValue="id" placeholder="{{ 'login.select_casuale' | translate }}" />
+          </div>
+          <div class="fieldset">
+            <label for="data">{{ "login.data" | translate }}</label>
+            <p-calendar formControlName="data" [showIcon]="true" [showOnFocus]="false" inputId="data"
+              [style]="{'width': '100%'}" />
+          </div>
+          <div class="fieldset">
+            <label for="strumento">{{ "login.strumento" | translate }}</label>
+            <input formControlName="strumento" id="strumento" pInputText type="text" />
+          </div>
+          <div class="fieldset">
+            <label for="quantita">{{ "login.quantita" | translate }}</label>
+            <p-inputNumber formControlName="quantita" inputId="integeronly" mode="decimal" />
+          </div>
+          <div class="fieldset">
+            <label for="prezzo">{{ "login.prezzo" | translate }}</label>
+            <p-inputNumber formControlName="prezzo" mode="decimal" inputId="minmaxfraction" [maxFractionDigits]="4" />
+          </div>
+          <div class="fieldset">
+            <label for="importo">{{ "login.importo" | translate }}</label>
+            <p-inputNumber formControlName="importo" readonly />
           </div>
         </form>
+
+        @if(!!submit) {
+          <div class="risultato">
+            <p>{{submit | json }}</p>
+          </div>
+        }
+
       </div>
       <div class="buttons">
-        <p-button pRipple [disabled]="!form.valid" [label]=" 'login.title' | translate" [style]="{'width': '100%'}" />
+        <button pButton pRipple [label]="'login.submit' | translate" style="width: 100%" [disabled]="!form.valid"
+          (click)="Submit()"></button>
       </div>
     </div>
   </div>

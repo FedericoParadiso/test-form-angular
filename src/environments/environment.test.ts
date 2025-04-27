@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  host: 'https://test.mytable.costa.it',
+  host: 'https://localhost:8080',
   api: '/api',
 };
